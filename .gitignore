@@ -45,9 +45,16 @@
 SourceArt/**/*.png
 SourceArt/**/*.tga
 
-# Binary Files
-Binaries/*
-Plugins/**/Binaries/*
+# Binary Files except for editor binaries for artists.
+!Binaries/*
+Binaries/*/**
+
+!Plugins/**/Binaries/*
+Plugins/**/Binaries/*/**
+
+!UnrealEditor*.dll
+!UnrealEditor.modules
+UnrealEditor*DebugGame.dll
 
 # Builds
 Build/*
@@ -72,3 +79,7 @@ Plugins/**/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+# Ignore the rider plugin
+Plugins/Developer/RiderLink/
+.idea/*/**
