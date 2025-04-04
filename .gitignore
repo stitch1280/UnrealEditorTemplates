@@ -83,3 +83,4 @@ DerivedDataCache/*
 # Ignore the rider plugin
 Plugins/Developer/RiderLink/
 .idea/*/**
+EditorTemplates/.idea/*/**
